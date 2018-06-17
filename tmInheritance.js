@@ -22,3 +22,5 @@ function Magazine(title,author,year,month){
 
 const mag1 = new Magazine('Men\'s health', 'Daily Bio','1980','August');
 console.log(mag1);
+
+//please commit this change
