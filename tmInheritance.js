@@ -19,8 +19,19 @@ function Magazine(title,author,year,month){
     this.month=month;
 }
 
+//Inherit Book prototype
+Magazine.prototype = Object.create(Book.prototype);
+
+//Inheriting Book s protype makes Magazine constructor as Book
+//To change magazine constructor to magazine function
+//Magazine.prototype.constructor = Magazine;
+
+
+//compare the 2 objects / constructors
+const Book1 = new Book('Socerer\'s Stone','J.K Rowling','1995');
+console.log(Book1);
 
 const mag1 = new Magazine('Men\'s health', 'Daily Bio','1980','August');
 console.log(mag1);
+console.log(mag1.getSummary());
 
-//please commit this change
